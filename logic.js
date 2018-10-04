@@ -27,28 +27,28 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     };
   }
 
-function radiusColor(mag) {
-  switch (true) {
-    case mag > 5:
-      return "red";
-    case mag > 4:
-      return "orange";
-    case mag > 3:
-      return "yellow";
-    case mag > 2:
-      return "green";
-    case mag > 1:
-      return "blue";
-  }
-}
+//function radiusColor(mag) {
+  //switch (true) {
+    //case mag > 5:
+      //return "red";
+    //case mag > 4:
+      //return "orange";
+    //case mag > 3:
+      //return "yellow";
+    //case mag > 2:
+      //return "green";
+    //case mag > 1:
+     // return "blue";
+  //}
+//}
 
-function radius(mag) {
-  if (magnitude === 0) {
-    return 1;
-  }
+//function radius(mag) {
+  //if (magnitude === 0) {
+  //  return 1;
+  //}
 
-  return mag * 6;
-}
+  //return mag * 6;
+//}
 L.geoJson(data, {
 
   pointLayer: function(feature, coordinates){
